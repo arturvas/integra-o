@@ -15,6 +15,8 @@
 // });
 
 $(document).ready(function () {
+  $("#cep").mask("00000-000");
+
   $("#btn-buscar-cep").click(function () {
     const cep = $("#cep").val();
     const endPoint = `https://viacep.com.br/ws/${cep}/json`;
